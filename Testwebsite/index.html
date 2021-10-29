@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href ="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -24,12 +26,22 @@
       </nav>
     </header>
     <main class="content">
-        <div class="front-banner">
+        <!-- <div class="front-banner">
             <div class="banner-content">
                 <h1>Welcome to this website</h1>
                 <button type="button">Find out more</button>
             </div>
+        </div> -->
+      <div class="slideshow">        
+          <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround" : true, "autoPlay" : 5000, "lazyLoad" : true }'> 
+            <div class="slide">
+              <img src="images/photo-1556672737-95f72ea2fee8.jfif">
+            </div>
+            <div class="slide">
+              <img src="images/photo-1585952815792-93ff961cd0a4.jfif">
+            </div>
         </div>
+      </div>
         <div class="container">
           <div class ='video'><iframe src="https://www.youtube.com/embed/KE0SbDBw-ok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>

@@ -27,10 +27,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-<<<<<<< HEAD
-=======
     font-family: var(--sans-serif-font);
->>>>>>> 2f3331d393114657ead9c26bd3d1ba51b20cdc63
   }
   .navigation a {
     color: var(--aero-blue);
