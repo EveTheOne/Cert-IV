@@ -5,6 +5,7 @@
     <link rel="icon" href="star-solid.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href ="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="script.js"></script>
@@ -19,122 +20,14 @@
       </button>
       <nav class="navigation">
         <a href="index.html">Home</a>
-        <a href="about.html"class="active">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
-    <main class="content">    
-        <div class="container">
-            <div class="about-apartment">
-                <h3>About The Apartment</h3>
-                <p>
-                    Queen sized bedroom suite
-                        A private entrance allows you to come and go as you please.
-                        Car parking is close by with room for a boat as well!
-                </p>
-                    <p>
-                        Your luxury apartment consists of a spacious separate living area with leather furniture overlooking a private garden for you to enjoy.
-                        A separate Queen sized bedroom suite with quality linen also overlooks the garden. The modern, elegant bathroom has a luxurious bath that entices you to unwind and relax whilst overlooking a private courtyard fernery.
-                    </p> 
-                    The kitchenette provides everything you will need for a relaxing breakfast. We include a coffee machine and a variety of coffee pods for your enjoyment. Two TVS will keep everyone happy along with a DVD player, stereo system and games galore. 
-                    There is an undercover area complete with BBQ and shady seating that offers plenty of space to stretch out and enjoy that cup of freshly brewed coffee or glass of wine.  
-                
-                 <p>Sit back and relax and take a breather. Read a book, go for a beach walk, have a sleep-in. It’s your private space to enjoy. 
-                    Amenities include 
-                    <ul>
-                        <li>top quality bedding,</li>
-                        <li>fluffy towels,</li>
-                        <li>bath robes,</li>
-                        <li>vanity packs,</li>
-                        <li>hair dryer,</li>
-                        <li>beach towels and chairs,</li>
-                        <li>a picnic basket,</li>
-                        <li>coffee machine and pods,</li>
-                        <li>a microwave/convection oven,</li>
-                        <li>a toaster,</li>
-                        <li>a kettle,</li>
-                        <li>a sandwich maker and BBQ tools.</li>
-                    </ul>
-                    We offer locally sourced provisions for a hearty breakfast together with home-made biscuits and chocolates.
-                </p>
-            </div>
-            <div class="gallery">
-              <img src="images/apartment_front.jpg">
-              <img src="images/apartment_bath.jpg">
-              <img src="images/apartment_garden.jpg">
-            </div>
-            <div class="pricing">
-              <h3 class="section-heading">Pricing</h3>
-              <div class="card">
-                <h4>Winter</h4>
-                <p>Pricing for winter is for two people.<br>
-                  1st June - August 31st.<br>                                                                      
-                  The apartment is strictly non-smoking.<br>
-                  $200 per night.<br>
-                  </p>
-              </div>
-              <div class='card'>
-                <h4>Summer</h4>
-                <p>Pricing for Summer.<br>
-                </p>
-              </div>
-              <div class="terms">
-                <h3> Terms and conditions</h3>
-                <ul>
-                  <li>A full refund will be given prior to 30 days cancellation</li>                                                                                                          
-                  <li>50% refund will be given after 30 days of cancellation.</li>                                                                                                            
-                  <li>In the event of a weekly or monthly booking the apartment will be serviced weekly unless by prior arrangement.</li>
-                  <li>Weekly Price     $1,250</li> 
-                  <li>Monthly Price $5,400</li>                                                                              
-                </ul>
-              </div>
-            </div>
-        </div>   
-    </main>
-    <footer class="footer">
-      <nav class="footer-navigation">
-        <a href="privacy.html">
-          Privacy Notice
-        </a>
-        <a href="conditions.html">
-          Terms and Conditions
-        </a>
-      </nav>
-      <nav class="social">
-        <a href="https://twitter.com/sorrento">
-          <i class="fab fa-twitter-square"></i>
-        </a>
-        <a href="https://instagram.com/sorrento">
-          <i class="fab fa-instagram-square"></i>
-        </a>
-        <a href="https://youtube.com/sorrento">
-          <i class="fab fa-youtube-square"></i>
-        </a>
-      </nav>
-    </footer>
-  </body>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>About</title>
-    <link rel="icon" href="star-solid.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href ="responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <header class="header">
-      <a href="index.html">
-        <img class="logo" src="images/star-solid.png">
-      </a>
-      <button type="button" class="nav-button">
-        <i class="fas fa-bars"></i>
-      </button>
-      <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html"class="active">About</a>
+        <div class="dropdown">
+          <a class="active">About</a>
+          <nav class="dropdown-menu">
+            <a href="about.html" class="active">About Apartment</a>
+            <a href="placerholder.html">About Activities</a>
+            <a href="placerholder-For-Pet">About Pet Policy</a>
+          </nav>
+        </div>
         <a href="contact.html">Contact</a>
       </nav>
     </header>

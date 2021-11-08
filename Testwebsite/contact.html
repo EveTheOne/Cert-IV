@@ -1,14 +1,11 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 2f3331d393114657ead9c26bd3d1ba51b20cdc63
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Contact Us</title>
     <link rel="icon" href="star-solid.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href ="responsive.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="script.js"></script>
@@ -23,20 +20,37 @@
       </button>
       <nav class="navigation">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <div class="dropdown">
+          <a >About</a>
+          <nav class="dropdown-menu">
+            <a href="about.html">About Apartment</a>
+            <a href="placerholder.html">About Activities</a>
+            <a href="placerholder-For-Pet">About Pet Policy</a>
+          </nav>
+        </div>
         <a href="contact.html" class="active">Contact</a>
       </nav>
     </header>
     <main class="content">
         <div class="container">
-            <div class="card">
+            <div class="card_s">
                 <h3>Where we are</h3>
                 <p>42 Holyrood Avenue<br> 
                     Sorrento VIC 3943</p>
             </div>
-            <div class="card">
+            <div class="card_s">
                 <h3>Call us</h3>
                 <a href="tel:0435 123 456">0435 123 456</a>
+            </div>
+            <div class="card_s" id="big_card">
+              <h1> Routes of contact</h1>
+              <h3> In the event you are unable to give us a call or pop by our hotel for a chat. <br>Feel free to give us a shout on one of our social media sites below!</h3>
+              <i class="fab fa-twitter" style="font-size:36px;color:rgb(68, 170, 218)">
+                <a href="https://twitter.com/sorrento">Twitter</a>
+              </i><br>
+              <i class="fab fa-instagram" style="font-size:36px;color:rgb(192, 142, 66)">
+                <a href="https://www.instagram.com/sorrento/">Instagram</a>
+              </i>
             </div>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195.56668003147692!2d144.74967585847193!3d-38.34743404922487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad4357b0e516369%3A0xf1dce538da37e359!2s42%20Holyrood%20Ave%2C%20Sorrento%20VIC%203943!5e0!3m2!1sen!2sau!4v1630376191698!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -56,6 +70,8 @@
                 <input required tabindex="2" type="text" id="lastname" name="lastname" placeholder="Your last name">
                 <label for="email">Your email address</label>
                 <input required type="text" id="email" name="email" placeholder="user@example.com">
+                <label for="phone">Mobile pohone number</label>
+                <input required type="number" id="Mobile-Phone" name="phone" placeholder="00 00 000 000">
                 <div class="date">
                   <label for="checkin">Start booking date</label>
                   <input required type="date" id="checkin" name="checkin" >
@@ -96,103 +112,4 @@
       </nav>
     </footer>
   </body>
-<<<<<<< HEAD
-=======
-=======
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Contact Us</title>
-    <link rel="icon" href="star-solid.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href ="responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <header class="header">
-      <a href="index.html">
-        <img class="logo" src="images/star-solid.png">
-      </a>
-      <button type="button" class="nav-button">
-        <i class="fas fa-bars"></i>
-      </button>
-      <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html" class="active">Contact</a>
-      </nav>
-    </header>
-    <main class="content">
-        <div class="container">
-            <div class="card">
-                <h3>Where we are</h3>
-                <p>42 Holyrood Avenue<br> 
-                    Sorrento VIC 3943</p>
-            </div>
-            <div class="card">
-                <h3>Call us</h3>
-                <a href="tel:0435 123 456">0435 123 456</a>
-            </div>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195.56668003147692!2d144.74967585847193!3d-38.34743404922487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad4357b0e516369%3A0xf1dce538da37e359!2s42%20Holyrood%20Ave%2C%20Sorrento%20VIC%203943!5e0!3m2!1sen!2sau!4v1630376191698!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="getting-there">
-              <h3>How to get to Sorrento by the sea</h3>
-              <p>It is easy to find. From Melbourne, take the Monash Freeway, connect onto the Eastlink heading for Portsea, then onto the Peninsula link to Sorrento.</p>
-              <p>Another option is the scenic drive around the beach. Although longer, it allows you to experience the coastline from Port Melbourne to Sorrento. </p>
-              <p>If you choose to come across on the Queenscliff/Sorrento Ferry, it is only a 2 minute drive from the Ferry Depot. </p>
-              <p>If you are a foot passenger we are happy to meet you at the Sorrento ferry at. Just phone us on <a class="phone" href="tel:0435 123 456"><i class='fas fa-phone-square'></i>0435 123 456</a> as you arrive.</p>
-            </div>            
-            <div class="contact">
-              <form id='contact' class="contact-form" action="https://example.com/form-handler">
-                <label for="firstname">First name</label>
-                <input required tabindex="1" type="text" id="firstname" name="firstname" placeholder="Your first name">
-                <label for="lastname">Last name </label>
-                <input required tabindex="2" type="text" id="lastname" name="lastname" placeholder="Your last name">
-                <label for="email">Your email address</label>
-                <input required type="text" id="email" name="email" placeholder="user@example.com">
-                <div class="date">
-                  <label for="checkin">Start booking date</label>
-                  <input required type="date" id="checkin" name="checkin" >
-                </div>
-                <div class="date">
-                  <label for="checkout">End booking date</label>
-                  <input required type="date" id="checkout" name="checkout">
-                </div>
-                <label for="notes">Notes</label>
-                <textarea id="notes" name="notes" placerholder="notes for your host" cols="30" rows="5"></textarea>
-                <div class="buttons">
-                  <button type="reset" name="reset">Clear Form</button>
-                  <button type="submit" name="submit">Submit</button>
-                </div>
-              </form>
-            </div>
-        </div>
-    </main>
-    <footer class="footer">
-      <nav class="footer-navigation">
-        <a href="privacy.html">
-          Privacy Notice
-        </a>
-        <a href="conditions.html">
-          Terms and Conditions
-        </a>
-      </nav>
-      <nav class="social">
-        <a href="https://twitter.com/sorrento">
-          <i class="fab fa-twitter-square"></i>
-        </a>
-        <a href="https://instagram.com/sorrento">
-          <i class="fab fa-instagram-square"></i>
-        </a>
-        <a href="https://youtube.com/sorrento">
-          <i class="fab fa-youtube-square"></i>
-        </a>
-      </nav>
-    </footer>
-  </body>
-
->>>>>>> 2f3331d393114657ead9c26bd3d1ba51b20cdc63
 </html>

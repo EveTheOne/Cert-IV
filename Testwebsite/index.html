@@ -4,7 +4,7 @@
     <title>Home Page</title>
     <link rel="icon" href="star-solid.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href ="responsive.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,43 +21,63 @@
       </button>
       <nav class="navigation">
         <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
+        <div class="dropdown">
+          <a>About</a>
+          <nav class="dropdown-menu">
+            <a href="about.html">About Apartment</a>
+            <a href="placerholder.html">About Activities</a>
+            <a href="placerholder-For-Pet">About Pet Policy</a>
+          </nav>
+        </div>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
     <main class="content">
-        <!-- <div class="front-banner">
-            <div class="banner-content">
-                <h1>Welcome to this website</h1>
-                <button type="button">Find out more</button>
-            </div>
-        </div> -->
-      <div class="slideshow">        
-          <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround" : true, "autoPlay" : 5000, "lazyLoad" : true }'> 
-            <div class="slide">
-              <img src="images/photo-1556672737-95f72ea2fee8.jfif">
-            </div>
-            <div class="slide">
-              <img src="images/photo-1585952815792-93ff961cd0a4.jfif">
-            </div>
-        </div>
-      </div>
-        <div class="container">
+        <div class="top-container">
           <div class ='video'><iframe src="https://www.youtube.com/embed/KE0SbDBw-ok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div class="card">
-            <img src="https://picsum.photos/id/237/600/300">
-            <h3>Pet friendly acommodation</h3>
-            <p>Sorrento is a pet friendly acommodation hotel</p>
-            <button type="button">Find out more</button>
-          </div>
-          <div class="card">
-            <img src="https://picsum.photos/id/1001/600/300">
-            <h3>About</h3>
-            <p>Sorrento is a destination located in beautiful Victoria </p>
-            <button type="button">Find out more</button>
-          </div>
         </div>
+        <div class="container">
+          <div class="card">
+            <div class="mini_slideshow">
+              <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true, "freeScroll" : true, "autoPlay" : 5000, "lazyLoad" :true}'>
+                <div class="mini_slide">
+                  <img src="https://picsum.photos/id/1001/600/300">
+                </div>
+                <div class="mini_slide">
+                  <img src="images/Cl_LayoutStyleMarkupDocs_AE_Pro_1of2_SR1/apartment_front.jpg">
+                </div>
+                <div class="mini_slide">
+                  <img src="images/apartment_garden.jpg">
+                </div>
+              </div>
+              </div>
+            <h3>About our hotel</h3>
+            <p>Sorrento is a destination located in beautiful Victoria however it is more then that!
+              We offer a varity of hotel suits and packages to suit your style of relaxation within our grounds.
+            </p>
+            <button type="button">Find out more</button>
+          </div>
+          <div class="card">
+            <div class="mini_slideshow">
+            <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true, "freeScroll" : true, "autoPlay" : 5000, "lazyLoad" :true}'>
+              <div class="mini_slide">
+                <img src="images/Cl_LayoutStyleMarkupDocs_AE_Pro_1of2_SR1/ocean_beach.jpg">
+              </div>
+              <div class="mini_slide">
+                <img src="images/Cl_LayoutStyleMarkupDocs_AE_Pro_1of2_SR1/ocean_beach_2.jpg">
+              </div>
+              <div class="mini_slide">
+                <img src="images/Cl_LayoutStyleMarkupDocs_AE_Pro_1of2_SR1/ocean_beach3.jpg">
+              </div>
+            </div>
+            </div>
+            <h3>Activities that we host</h3>
+            <p>Sorrento is a lavihs luxury hotel that not only supports a dececadant array of hotel servicies but offer a range of indoor and outdoor adventures to immesrse yourself in while staying among our company</p>
+            <button type="button" >Find out more</button>
+          </div>
+          </div>
+      </div>
     </main>
     <footer class="footer">
       <nav class="footer-navigation">
