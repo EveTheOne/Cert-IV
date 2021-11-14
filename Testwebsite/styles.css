@@ -22,20 +22,44 @@
    
   .header {
     background-color: var(--space-cadet);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 90px;
+  }
+
+  .header a{
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--aero-blue) ;
+  }
+  .header a:hover{
+    background-color: brown;
+    
+  }
+  .header-group{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    align-items: flex-end;
-    font-family: var(--sans-serif-font);
+    max-width: 800px;
   }
   .navigation a {
     color: var(--aero-blue);
     padding: 15px;
     text-decoration: none;
     font-size: 18px;
+    text-align: start;
+    min-width: 150px;
   }
 
-  /* Dark red to signel current page */
+ .navigation {
+    display: grid;
+    justify-self: end;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 2px;
+  }
+/* Dark red to signel current page */
   .navigation a.active{
     color: white;
     background-color: darkred;
@@ -44,13 +68,12 @@
   .navigation a.active_D{
     color: white;
     background-color: rgb(11, 141, 33);
+  } 
+
+  .navigation a:hover {
+    background-color: brown;
   }
 
-  .navigation {
-    display: flex;
-    flex-direction: row;
-    
-  }
   .logo {
     width: 60px;
     padding: 15px;
@@ -158,6 +181,9 @@ padding-top: 10px;
 .card > h3{
   text-align: center;
 }
+.card > h4{
+  text-align: center;
+}
 .card > p{
 text-align: center;
 }
@@ -251,15 +277,14 @@ text-align: center;
  .buttons > button{
    font-size: 16px;
    padding: 10px;
-   width: 14cha;
    border-radius: 4px;
-   background-color: black;
+   background-color: rgb(236, 232, 232);
    color: rgb(5, 4, 4);
-   border: 3px solid var(--independence);
+   border: 3px solid var(--lavender-blue);
  }
 
  .about-apartment {
-   grid-column: span 1;
+   grid-column: span 2;
    display: block;
    align-content: center;
  }
@@ -295,19 +320,28 @@ padding-top: 10px;
  .section-heading{
    grid-column: span 2;
  }
+ h3.section-heading{
+   text-align: center;
+ }
  .terms {
    grid-column: span 2;
+   justify-content: center;
+   margin: auto;
+   display: block;
  }
+.terms > h3 {
+  text-align: center;
+}
  .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
   grid-column: span 2;
 }
-.gallery img {
-  width: 100%;
+.gallery > img {
+  width: 90%;
   object-fit: cover;
-  height: 200px;
+  height: 80%;
   object-position: center;
 }
 .navigation.open {
@@ -410,49 +444,4 @@ a {
 }
 a:hover {
   color: rgb(255, 255, 255);
-}
-
-
-/* Experimental header */
-.header_ex {
-background-color: var(--lavender-blue);
-font-family: var(--sans-serif-font);
-min-height: 80px;
-margin: 0;
-
-}
-.navigation_ex {
-  grid-template-columns: 1fr 1fr 1fr ;
-  grid-template-rows: 1fr;
-  display: grid;
-  margin: 5px;
-  gap: 5px;
-
-}
-.navigation_ex > a{
-  /* display: block; */
-}
-
-.header_ex  a  {
- text-align: center;
-}
-
-.nav_block {
-  padding: 15px;
-  background-color: chartreuse;
-  color: white;
-  margin: auto;
-  border: solid black;
-  max-width: 80px;
-  max-height: 40px;
-  text-align: center;
-  grid-column: span 1;
-}
-/* .nav_block_point{
-  display: grid;
-  min-height: ;
-} */
-#nav_big_block{
-  grid-column: span 2;
-  grid-row: span 2;
 }
